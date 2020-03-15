@@ -1,0 +1,24 @@
+{
+  "name": "node-ts",
+  "version": "1.0.0",
+  "description": "Test node app using ts",
+  "main": "./build/index.js",
+  "author": "Hakall",
+  "license": "MIT",
+  "scripts": {
+    "tsc": "tsc",
+    "test": "jest",
+    "dev": "ts-node-dev --respawn --transpileOnly ./src/index.ts",
+    "prod": "tsc && node ./build/index.js"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.1.3",
+    "jest": "^25.1.0",
+    "ts-jest": "^25.2.1",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.8.3"
+  },
+  "jest": {
+    "preset": "ts-jest"
+  }
+}
